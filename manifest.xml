@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ╔═══════════════════════════════════════════════════════════════╗
+  ║  BEFORE SIDELOADING: Find-and-replace all instances of       ║
+  ║  YOUR_GITHUB_USERNAME with your actual GitHub username.       ║
+  ║                                                               ║
+  ║  Example: if your username is "karthi-pfg", replace           ║
+  ║  YOUR_GITHUB_USERNAME with karthi-pfg everywhere below.       ║
+  ╚═══════════════════════════════════════════════════════════════╝
+-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+           xsi:type="MailApp">
+
+  <Id>a1b2c3d4-e5f6-7890-abcd-ef1234567890</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Email Feed</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Email Feed"/>
+  <Description DefaultValue="Read and reply to multiple emails in a stacked feed view."/>
+
+  <IconUrl DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/"/>
+
+  <AppDomains>
+    <AppDomain>https://YOUR_GITHUB_USERNAME.github.io</AppDomain>
+  </AppDomains>
+
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.13"/>
+    </Sets>
+  </Requirements>
+
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+        <RequestedHeight>450</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+
+  <Permissions>ReadWriteMailbox</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  </Rule>
+
+  <DisableEntityHighlighting>true</DisableEntityHighlighting>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides"
+                    xsi:type="VersionOverridesV1_0">
+
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.13">
+        <bt:Set Name="Mailbox"/>
+      </bt:Sets>
+    </Requirements>
+
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+
+          <FunctionFile resid="functionFile"/>
+
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadGroup">
+                <Label resid="groupLabel"/>
+
+                <Control xsi:type="Button" id="openFeedBtn">
+                  <Label resid="btnLabel"/>
+                  <Supertip>
+                    <Title resid="btnLabel"/>
+                    <Description resid="btnDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="icon16"/>
+                    <bt:Image size="32" resid="icon32"/>
+                    <bt:Image size="80" resid="icon80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="taskpaneUrl"/>
+                    <SupportsPinning>true</SupportsPinning>
+                    <SupportsMultiSelect>true</SupportsMultiSelect>
+                  </Action>
+                </Control>
+
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <bt:Image id="icon16" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-16.png"/>
+        <bt:Image id="icon32" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-32.png"/>
+        <bt:Image id="icon80" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="taskpaneUrl" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+        <bt:Url id="functionFile" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel" DefaultValue="Email Feed"/>
+        <bt:String id="btnLabel" DefaultValue="Open Feed"/>
+        <bt:String id="btnDesc" DefaultValue="View and reply to selected emails in a feed."/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="btnDescLong" DefaultValue="Select multiple emails and open them in a stacked feed view to read and reply quickly."/>
+      </bt:LongStrings>
+    </Resources>
+
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1"
+                      xsi:type="VersionOverridesV1_1">
+
+      <Requirements>
+        <bt:Sets DefaultMinVersion="1.13">
+          <bt:Set Name="Mailbox"/>
+        </bt:Sets>
+      </Requirements>
+
+      <Hosts>
+        <Host xsi:type="MailHost">
+          <DesktopFormFactor>
+
+            <FunctionFile resid="functionFile"/>
+
+            <ExtensionPoint xsi:type="MessageReadCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgReadGroup1">
+                  <Label resid="groupLabel"/>
+
+                  <Control xsi:type="Button" id="openFeedBtn1">
+                    <Label resid="btnLabel"/>
+                    <Supertip>
+                      <Title resid="btnLabel"/>
+                      <Description resid="btnDesc"/>
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="icon16"/>
+                      <bt:Image size="32" resid="icon32"/>
+                      <bt:Image size="80" resid="icon80"/>
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="taskpaneUrl"/>
+                      <SupportsPinning>true</SupportsPinning>
+                      <SupportsMultiSelect>true</SupportsMultiSelect>
+                    </Action>
+                  </Control>
+
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+
+          </DesktopFormFactor>
+        </Host>
+      </Hosts>
+
+      <Resources>
+        <bt:Images>
+          <bt:Image id="icon16" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-16.png"/>
+          <bt:Image id="icon32" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-32.png"/>
+          <bt:Image id="icon80" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-80.png"/>
+        </bt:Images>
+        <bt:Urls>
+          <bt:Url id="taskpaneUrl" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+          <bt:Url id="functionFile" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+        </bt:Urls>
+        <bt:ShortStrings>
+          <bt:String id="groupLabel" DefaultValue="Email Feed"/>
+          <bt:String id="btnLabel" DefaultValue="Open Feed"/>
+          <bt:String id="btnDesc" DefaultValue="View and reply to selected emails in a feed."/>
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <bt:String id="btnDescLong" DefaultValue="Select multiple emails and open them in a stacked feed view to read and reply quickly."/>
+        </bt:LongStrings>
+      </Resources>
+
+    </VersionOverrides>
+  </VersionOverrides>
+</OfficeApp>
