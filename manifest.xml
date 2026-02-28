@@ -2,10 +2,10 @@
 <!--
   ╔═══════════════════════════════════════════════════════════════╗
   ║  BEFORE SIDELOADING: Find-and-replace all instances of       ║
-  ║  YOUR_GITHUB_USERNAME with your actual GitHub username.       ║
+  ║  karthi1-cyber with your actual GitHub username.       ║
   ║                                                               ║
   ║  Example: if your username is "karthi-pfg", replace           ║
-  ║  YOUR_GITHUB_USERNAME with karthi-pfg everywhere below.       ║
+  ║  karthi1-cyber with karthi-pfg everywhere below.       ║
   ╚═══════════════════════════════════════════════════════════════╝
 -->
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
@@ -21,12 +21,12 @@
   <DisplayName DefaultValue="Email Feed"/>
   <Description DefaultValue="Read and reply to multiple emails in a stacked feed view."/>
 
-  <IconUrl DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/"/>
+  <IconUrl DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/"/>
 
   <AppDomains>
-    <AppDomain>https://YOUR_GITHUB_USERNAME.github.io</AppDomain>
+    <AppDomain>https://karthi1-cyber.github.io</AppDomain>
   </AppDomains>
 
   <Hosts>
@@ -42,7 +42,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+        <SourceLocation DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/taskpane.html"/>
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -103,13 +103,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="icon16" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-16.png"/>
-        <bt:Image id="icon32" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-32.png"/>
-        <bt:Image id="icon80" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-80.png"/>
+        <bt:Image id="icon16" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-16.png"/>
+        <bt:Image id="icon32" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-32.png"/>
+        <bt:Image id="icon80" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="taskpaneUrl" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
-        <bt:Url id="functionFile" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+        <bt:Url id="taskpaneUrl" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/taskpane.html"/>
+        <bt:Url id="functionFile" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="Email Feed"/>
@@ -169,13 +169,13 @@
 
       <Resources>
         <bt:Images>
-          <bt:Image id="icon16" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-16.png"/>
-          <bt:Image id="icon32" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-32.png"/>
-          <bt:Image id="icon80" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/assets/icon-80.png"/>
+          <bt:Image id="icon16" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-16.png"/>
+          <bt:Image id="icon32" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-32.png"/>
+          <bt:Image id="icon80" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="taskpaneUrl" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
-          <bt:Url id="functionFile" DefaultValue="https://YOUR_GITHUB_USERNAME.github.io/outlook-email-feed/taskpane.html"/>
+          <bt:Url id="taskpaneUrl" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/taskpane.html"/>
+          <bt:Url id="functionFile" DefaultValue="https://karthi1-cyber.github.io/outlook-email-feed/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="groupLabel" DefaultValue="Email Feed"/>
